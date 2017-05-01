@@ -16,14 +16,36 @@ img {
 
 /***************** NAV *****************/
 
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
 nav a:hover {
   text-decoration: underline;
 }
 
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  background: #0066cc;
+  padding: 1rem 0 1rem 0;
+}
 /**************** HERO *****************/
 
 header img {
-  max-height: 6rem;
+  max-height: 8rem;
+  margin: 1rem 0 0 2rem;
+}
+
+h1 {
+  color: #0066cc;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-left: 2rem;
+  vertical-align: bottom;
 }
 
 h1 .logo-w {
@@ -58,4 +80,16 @@ h3 {
   font-size: 1.2rem;
   text-align: center;
   color: #2d2d2d;
+}
+
+.item-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item-container div {
+  flex-basis: 10rem;
+  margin: 2rem;
+  border: 2px solid black;
+  padding: 1rem;
 }
