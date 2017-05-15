@@ -98,3 +98,16 @@ h3 {
   border: 2px solid black;
   padding: 1rem;
 }
+
+
+@media (min-width: 700px) {
+  .item-container div {
+    flex-basis: 10rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  .item-container div {
+    flex-basis: 20rem;
+  }
+}
