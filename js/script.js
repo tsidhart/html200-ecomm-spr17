@@ -85,9 +85,13 @@ for (var i = 0; i < add.length; i++) {
 
     if (incart == false) {
       cart.push(prod);
+      //add item into the cart
+      var addtocart = document.getElementById("cartitem");
+      addtocart.innerHTML = parseInt(addtocart.innerHTML) + 1;
     }
 
     console.log(cart);
+
   }
 
   rem[i].onclick = function() {
@@ -104,6 +108,9 @@ for (var i = 0; i < add.length; i++) {
     for (var k = 0; k < cart.length; k++) {
       if (cart[k] == prod) {
         cart.splice(k, 1);
+        //remove items from the cart
+        var remtocart = document.getElementById("cartitem");
+        remtocart.innerHTML = parseInt(remtocart.innerHTML) - 1;
         break;
       }
     }
